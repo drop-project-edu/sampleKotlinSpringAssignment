@@ -10,6 +10,23 @@ You will implement two classes:
 1. A **service** that builds greeting messages.
 2. A **command-line runner** that uses that service to print a greeting when the application starts.
 
+## Requirements
+
+Your project must be a maven project and use the following versions and dependencies:
+
+- **Java**: 17
+- **Kotlin**: 1.9.25
+- **Spring Boot**: 3.5.10
+- **Build tool**: Maven
+
+Dependencies:
+- `spring-boot-starter`
+- `kotlin-reflect`
+- `kotlin-stdlib`
+
+**Important:** Your `pom.xml` must match these versions and dependencies exactly, otherwise Drop Project will not be
+able to compile and test your submission.
+
 ## Instructions
 
 * Create a Kotlin Spring Boot project in your IDE with the package `org.dropproject.samples.samplekotlinspringassignment`.
