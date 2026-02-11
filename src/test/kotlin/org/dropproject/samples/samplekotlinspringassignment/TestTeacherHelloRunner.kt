@@ -19,6 +19,6 @@ class TestTeacherHelloRunner {
     @Test
     fun `runner prints greeting`(output: CapturedOutput) {
         (helloRunner as CommandLineRunner).run()
-        assertTrue(output.out.contains("Hello, World!"))
+        assertTrue(output.out.contains("Hello, World!")) { "HelloRunner should print 'Hello, World!' to the standard output" }
     }
 }
