@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.system.CapturedOutput
 import org.springframework.boot.test.system.OutputCaptureExtension
@@ -17,7 +18,7 @@ class TestTeacherHelloRunner {
 
     @Test
     fun `runner prints greeting`(output: CapturedOutput) {
-        helloRunner.run()
+        (helloRunner as CommandLineRunner).run()
         assertTrue(output.out.contains("Hello, World!"))
     }
 }
